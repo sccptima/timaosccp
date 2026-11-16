@@ -1,0 +1,420 @@
+
+<html lang="pt-BR">
+<head>
+<meta charset="UFT-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Site educativo sobre a história, os títulos e os ídolos do Sport Club Corinthians Paulista.">
+<title>Corinthians  Paixão Alvinegra</title>
+
+<style>
+*
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+body
+{
+font-family: arial, sans-serif;
+background: #f2f2f2;
+color: #222;
+line-height: 1.7;
+}
+
+header
+{
+background: #080808;
+color: white;
+text-align: center;
+padding: 30px 15px;
+border-bottom: 5px solid #c41220;
+}
+
+.escudo
+{
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 75px;
+height: 75px;
+border: 3px solid white;
+border-radius: 50%;
+font-size: 23px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+header h1
+{
+font-size: 30px;
+letter-spacing: 2px;
+}
+
+header p
+{
+color: #ccc;
+}
+
+nav
+{
+background: #171717;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 5px;
+padding: 12px;
+position: sticky;
+top: 0;
+z-index: 10;
+}
+
+nav a
+{
+color: white;
+text-decoration: none;
+padding:8px 12px;
+border-radius: 5px;
+font-size: 14px;
+font-weight: bold;
+}
+
+nav a:hover
+{
+background: #c41220;
+}
+
+.banner
+{
+height: 380px;
+position: relative;
+background: #111;
+overflow: hidden;
+}
+
+.banner img
+{
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: .65;
+}
+
+.banner-texto
+{
+position: absolute;
+inset: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: white;
+padding: 20px;
+}
+
+.banner-texto h2
+{
+font-size: clamp(30px, 6ww, 55px);
+text-shadow: 2px 2px 5px  black;
+}
+
+.botao
+{
+display: inline-block;
+margin-top: 18px;
+background: #c41220;
+color: white;
+padding: 11px 22px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+}
+
+main
+{
+max-width: 1050px;
+margin: 30px auto;
+padding: 0 18px;
+}
+
+section
+{
+background: white;
+padding: 26px;
+margin-bottom: 25px;
+border-radius: 10px;
+box-shadow: 0 3px 12px #00000012;
+scroll-margin-top: 75px;
+}
+
+h2
+{
+color: #c41220;
+margim-bottom: 15px;
+border-left: 5px solid #c41220;
+padding-left: 12px;
+}
+
+h3
+{
+margim: 10px 0,
+}
+
+.destaques,
+.galeria,
+.idolos
+{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+gap: 18px;
+}
+
+.card
+{
+background: #f4f4f4;
+padding: 20px;
+border-radius: 8px;
+border-bottom: 4px solid #c41220;
+}
+
+.card strong
+{
+display: block;
+font-size: 24px;
+color: #c41220;
+}
+
+.foto.
+.idolo
+{
+overflow: hidden;
+background: #f4f4f4;
+border-radius: 8px;
+border-bottom: 4px solid #c41220;
+}
+
+.foto img 
+{
+width:100%;
+height: 190px;
+object-fit: cover;
+display: block;
+transition: transform .3s;
+}
+
+.foto img:hover
+{
+transform: scale(1.04);
+}
+
+.foto p
+{
+padding: 12px;
+font-weight: bold;
+}
+
+.idolo img
+{
+width: 100%;
+height: 270px;
+object-fit: cover;
+object-position: center top;
+display: block;
+}
+
+.idolo-conteudo
+{
+padding: 16px;
+}
+
+.idolo h3
+{
+color: #c41220;
+}
+
+.idolo a
+{
+display: inline-block;
+margim-top: 10px;
+color: #a00;
+font-size: 13px
+overflow-wrap: anywhere;
+}
+
+.lista
+{
+padding-left: 22px;
+}
+
+.lista li
+{
+margin-bottom: 8px;
+}
+
+.creditos
+{
+max-width: 850px;
+margin: 15px auto;
+font-size: 13px;
+overflow-wrap: anywhere;
+}
+
+.creditos p
+{
+margin-bottom: 12px;
+}
+
+footer
+{
+background: #080808;
+color: #ddd;
+padding: 30px 20px;
+text-align: center;
+}
+
+footer h2
+{
+color: white;
+border: none;
+padding: 0;
+}
+
+footer a
+{
+color: white;
+}
+
+footer small
+{
+display: block;
+margin-top: 20px;
+color: #aaa;
+}
+
+@media (max-width: 600px) {
+header h1 {
+font-size: 22px;
+}
+.banner {
+height: 290px;
+}
+
+section {
+padding: 19px;
+}
+
+nav {
+gap: 2px;
+}
+
+nav a {
+padding: 7px;
+font-size: 12px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="escudo">SCCP</div>
+<h1> SPORT CLUB CORINTHIANS PAULISTA</h1>
+<p>Desde 1910 - A paixão que nunca acaba!</p>
+</header>
+
+<nav>
+        <a href="#inicio.">Início</a>
+        <a href="historia.html">História</a>
+        <a href="titulos.html">Títulos</a>
+        <a href="arena.html">Arena</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="idolo.html">Ídolos</a>
+        <a href="torcida.html">Torcida</a>
+</nav>
+
+<div class="banner" id="início">
+<img
+src="arenaparoramica.WEBP">
+alt="Vista parorâmica da Neo Química Arena">
+
+
+<div class="banner-texto">
+<h2>VAI, CORINTHIANS!</h2>
+<p>Uma história de luta, tradição e paixão </p>
+<a class="botao" href="#historia">Conheça o Timão</a>
+</div>
+</div>
+
+<main>
+
+<footer>
+<h2>Créditos das Imagens</h2>
+
+<div class="créditos">
+<p>
+
+<strong> Neo Quimica Arena (1):</strong
+FotografoWallacyFerrari.
+
+<strong>Neo Química Arena (1):</strong>
+fotografoWallacyFerrari
+
+<strong>Arena Corinthians (2) </strong>
+Alexandre Breveglieri.
+</p>
+</div>
+
+<p> Site independente, criado para fins educativos. Todos os textos foram tirados da Wikipedia, não é uma página oficial do corinthians </p>
+
+<small>2026 - Paixão Alvinegra Vai, Corinthians!</small>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
